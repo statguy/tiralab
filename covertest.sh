@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo Testing B-Tree...
+./test btree 2 10 keys.txt 3 | sort | uniq
+echo Testing Skiplist...
+./test skiplist 10 0.5 10 keys.txt 3 | sort | uniq
